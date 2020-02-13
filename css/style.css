@@ -101,6 +101,10 @@ main section{
 	width: 330px;
 }
 
+.video{
+	cursor: pointer;
+}
+
 .video div, .jouer div{
 	border-radius: 10px;
 	border: 2px solid white;
