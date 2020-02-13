@@ -42,7 +42,3 @@ function fermerFenetresVideos(){
 	document.querySelector(".fenetreVideo1").style.display = "none";
 	document.querySelector(".fenetreVideo1").getElementsByTagName("iframe")[0].src="";
 }
-
-function stop(){
-	
-}
