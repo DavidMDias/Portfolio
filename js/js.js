@@ -23,7 +23,7 @@ function btnsVideo()
 	document.querySelector(".video1").addEventListener("mousedown", function(){
 		document.querySelector(".vide").style.display = "block";
 		document.querySelector(".fenetreVideo1").style.display = "block";
-		document.querySelector(".fenetreVideo1").getElementsByTagName("iframe")[0].src="https://www.youtube.com/embed/PrIiDMS94Uw?rel=0";
+		document.querySelector(".fenetreVideo1").getElementsByTagName("iframe")[0].src="https://www.youtube.com/embed/DlR1fxsMHpU?rel=0";
 	});
 }
 
