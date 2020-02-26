@@ -148,6 +148,10 @@ main section{
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+footer{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (min-width: 805px) {
 	.dprojets{
 		width: 800px;
