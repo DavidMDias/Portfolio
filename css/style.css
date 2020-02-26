@@ -149,7 +149,7 @@ main section{
 }
 
 footer{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 @media screen and (min-width: 805px) {
