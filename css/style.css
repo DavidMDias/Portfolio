@@ -163,6 +163,13 @@ form{
 	flex-direction: column;
 }
 
+label{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
 @media screen and (min-width: 805px) {
 	.dprojets{
 		width: 800px;
