@@ -168,19 +168,46 @@ label{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	font-size: 1.2em;
 }
 
+.email{
+	height: 34px;
+	width: 300px;
+	font-size: 0.9em;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.message{
+	margin: 0px;
+	height: 119px;
+	width: 472px;
+	font-size: 0.9em;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	padding: 5px 10px;
+	max-width: 450px;
+	border: 1.5px solid white;
+}
+
+
+	
 .envoyer{
 	border-radius: 10px;
 	border: 2px solid white;
 	height: 40px;
 	width: 151px;
-	font-size: 0.80em;
+	font-size: 1.2em;
 	margin: 10px;
 	color: white;
 	background-color: transparent;
 }
-	
+
 .meContacter{
 	font-size:1.2em;
 }
