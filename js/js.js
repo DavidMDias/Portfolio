@@ -1,3 +1,18 @@
+function fondu()
+{
+	var header = document.querySelector("header");   
+	var opacite = 0;
+	var id = setInterval(frame, 15);
+	function frame() {
+	  if (opacite == 100) {
+		clearInterval(id);
+	  } else {
+		opacite++; 
+		header.style.opacity = opacite/100;
+	  }
+	}
+}
+
 function btnsVideo()
 {
 	document.querySelector(".vide").addEventListener("mousedown", function(){
