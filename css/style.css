@@ -170,6 +170,17 @@ label{
 	flex-direction: column;
 }
 
+.envoyer{
+	border-radius: 10px;
+	border: 2px solid white;
+	height: 40px;
+	width: 151px;
+	font-size: 0.80em;
+	margin: 10px;
+	color: white;
+	background-color: transparent;
+}
+	
 .meContacter{
 	font-size:1.2em;
 }
