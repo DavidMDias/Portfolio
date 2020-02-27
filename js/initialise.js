@@ -8,6 +8,7 @@
 (function()
 {
 	btnsVideo();
+	fondu();
  return true;
 }) ();
 
