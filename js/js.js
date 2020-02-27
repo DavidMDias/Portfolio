@@ -1,5 +1,6 @@
 function fondu()
 {
+	alert("nice");
 	var header = document.querySelector("header");   
 	var opacite = 0;
 	var id = setInterval(frame, 15);
