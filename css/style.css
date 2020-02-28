@@ -35,6 +35,13 @@ header{
 	flex-direction: column;
 }
 
+.indisponible{
+	color: grey;
+	border: 2px solid grey !important;
+	user-select: none;
+	cursor: default;
+}
+
 header > h1,h3,h4,a{
 	text-align: center;
 	font-size: 2em;
@@ -56,8 +63,8 @@ header a{
 	font-family: "Palanquin";
 	transform:scale(5,1);
 	font-size: 0.8em;
+	user-select: none;
 }
-
 header h4{
 	position: absolute;
     bottom: 0;
@@ -68,7 +75,18 @@ main h2{
 	text-align: center;
 	font-size: 2em;
 	padding-top: 85px;
-	padding-bottom: 85px;
+}
+
+main .video0{
+	text-decoration: underline;
+	margin: 0;
+}
+
+main .portfoliovideo{
+	text-align: center;
+	font-size: 0.7em;
+	margin-bottom: 85px;
+	text-decoration: underline;
 }
 
 main section{
@@ -231,6 +249,10 @@ label{
 
 .meContacter{
 	font-size:1.5em;
+}
+
+br{
+	user-select: none;
 }
 
 @media screen and (min-width: 805px) {
