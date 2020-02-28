@@ -28,28 +28,27 @@ body{
 }
 
 header{
-	position: relative;
-	min-height: 100%; 
-}
-
-header h1{
-	position: absolute;
-  	top: 30%;
-}
-
-header h3{
-	position: absolute;
-	top: 35%;
+	min-height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
 header > h1,h3,h4,a{
-	padding: 0;
-	margin: 0;
-	width: 100%;
 	text-align: center;
 	font-size: 2em;
 	text-decoration: none;
 	color: white;
+
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+header > h3{
+	padding-bottom: 25%;
 }
 
 header a{
@@ -61,8 +60,8 @@ header a{
 
 header h4{
 	position: absolute;
-	bottom: 0;
-	padding-bottom: 5%;
+    bottom: 0;
+    padding-bottom: 5%;
 }
 
 main h2{
@@ -167,7 +166,7 @@ footer{
 	display: flex;
 	background-color: rgba(0, 0, 0, 0.4);
 	flex-direction: column;
-	margin-top: 15%;
+	margin-top: 8%;
 }
 
 form{
