@@ -77,16 +77,13 @@ main h2{
 	padding-top: 85px;
 }
 
-main .video0{
-	text-decoration: underline;
-	margin: 0;
-}
-
 main .portfoliovideo{
 	text-align: center;
-	font-size: 0.7em;
-	margin-bottom: 85px;
 	text-decoration: underline;
+	margin: 0;
+	font-size: 1.25em;
+	margin-bottom: 85px;
+	cursor: default;
 }
 
 main section{
