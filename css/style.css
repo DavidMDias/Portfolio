@@ -79,9 +79,17 @@ main h2{
 
 main .portfoliovideo{
 	text-align: center;
-	text-decoration: underline;
 	margin: 0;
 	font-size: 1.25em;
+	margin-bottom: 85px;
+	cursor: default;
+}
+
+main .portfoliovideo:hover{
+	text-align: center;
+	text-decoration: underline;
+	margin: 0;
+	font-size: 1.26em;
 	margin-bottom: 85px;
 	cursor: default;
 }
