@@ -27,8 +27,8 @@ function btnsVideo()
 	});
 	document.querySelector(".video4").addEventListener("mousedown", function(){
 		document.querySelector(".vide").style.display = "block";
-		document.querySelector(".fenetreVideo3").style.display = "block";
-		document.querySelector(".fenetreVideo3").getElementsByTagName("iframe")[0].src="https://www.youtube.com/embed/8l1CvDb_9C8?rel=0";
+		document.querySelector(".fenetreVideo4").style.display = "block";
+		document.querySelector(".fenetreVideo4").getElementsByTagName("iframe")[0].src="https://www.youtube.com/embed/8l1CvDb_9C8?rel=0";
 	});
 	document.querySelector(".video3").addEventListener("mousedown", function(){
 		document.querySelector(".vide").style.display = "block";
