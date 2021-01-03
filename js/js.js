@@ -58,6 +58,9 @@ function fermerFenetresVideos(){
 	document.querySelector(".fenetreVideo0").style.display = "none";
 	document.querySelector(".fenetreVideo0").getElementsByTagName("iframe")[0].src="";
 
+	document.querySelector(".fenetreVideo5").style.display = "none";
+	document.querySelector(".fenetreVideo5").getElementsByTagName("iframe")[0].src="";
+	
 	document.querySelector(".fenetreVideo4").style.display = "none";
 	document.querySelector(".fenetreVideo4").getElementsByTagName("iframe")[0].src="";
 	
