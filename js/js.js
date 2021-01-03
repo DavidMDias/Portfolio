@@ -25,6 +25,11 @@ function btnsVideo()
 		document.querySelector(".fenetreVideo0").style.display = "block";
 		document.querySelector(".fenetreVideo0").getElementsByTagName("iframe")[0].src="https://www.youtube.com/embed/bnobL9H-pMI?rel=0";
 	});
+	document.querySelector(".video5").addEventListener("mousedown", function(){
+		document.querySelector(".vide").style.display = "block";
+		document.querySelector(".fenetreVideo5").style.display = "block";
+		document.querySelector(".fenetreVideo5").getElementsByTagName("iframe")[0].src="https://www.youtube.com/embed/cLTFzABJeVk?rel=0";
+	});
 	document.querySelector(".video4").addEventListener("mousedown", function(){
 		document.querySelector(".vide").style.display = "block";
 		document.querySelector(".fenetreVideo4").style.display = "block";
