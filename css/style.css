@@ -1,0 +1,328 @@
+@font-face {
+	font-family: Retro;
+	src: url(../font/Retro-Gaming.ttf);
+}
+
+@font-face {
+	font-family: Palanquin;
+	src: url(../font/Palanquin-Regular.ttf);
+}
+
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100%;
+	font-family: "Retro";
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url("../img/wallpaperd.png");
+	color: white;
+}
+
+body{	
+	padding: 0;
+	height: 100%;
+	margin: 0;
+}
+
+header{
+	min-height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.indisponible{
+	color: grey;
+	border: 2px solid grey !important;
+	user-select: none;
+	cursor: default;
+}
+
+header > h1,h3,h4,a{
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	color: white;
+
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+header > h3{
+	padding-bottom: 25%;
+}
+
+header a{
+	display:inline-block;
+	font-family: "Palanquin";
+	transform:scale(5,1);
+	font-size: 0.8em;
+	user-select: none;
+}
+header h4{
+	position: absolute;
+    bottom: 0;
+    padding-bottom: 5%;
+}
+
+main h2{
+	text-align: center;
+	font-size: 2em;
+	padding-top: 85px;
+}
+
+main .btnCategorie{
+	text-align: center;
+	margin: 0;
+	font-size: 1.25em;
+	margin-bottom: 85px;
+	cursor: default;
+}
+
+main .btnCategorie:hover{
+	text-align: center;
+	text-decoration: underline;
+	margin: 0;
+	font-size: 1.26em;
+	margin-bottom: 85px;
+	cursor: default;
+}
+
+main section{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.dprojets{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-direction: row;
+	margin: 10px 0;
+	width: 400px;
+}
+
+.projet{
+	position: relative;
+	width: 350px;
+	height: 625px;
+	max-width: 350px;
+	margin: 20px 22px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sp{
+	height: 500px;
+}
+
+.mus {
+	height: 460px;
+}
+
+.projet img{
+	padding: 10px 10px 0 10px;
+	width: 330px;
+	user-select: none;
+}
+
+.projet p{
+	text-align: justify;
+	line-height: 1.5;
+	margin-top: 5px;
+	padding: 0 10px;
+	width: 330px;
+	font-size: 0.79em;
+}
+
+.btn{
+	cursor: pointer;
+}
+
+.btn div, .jouer div{
+	border-radius: 10px;
+	border: 2px solid white;
+	width: 151px;
+	font-size: 0.60em;
+	margin: 10px;
+
+	position: absolute;
+	bottom: 0;
+	padding: 7px 0;
+}
+
+.btn div{
+	left: 0;
+}
+
+.btn .soloBtn {
+	width: 93.3%;
+}
+
+.jouer div {
+	right: 0;
+}
+
+#fenetre{
+	display: none;
+	position: fixed;
+	width: 1000px;
+	height: 563px;
+	top: 50%;
+	margin-top: -281px;
+	left: 50%;
+	margin-left: -500px;
+}
+
+#fenetre iframe{
+	width: 100%;
+	height: 100%;
+}
+
+#fenetre img{
+	width:100%;
+}
+
+
+fvid{
+	width:100%;
+}
+
+.fimg {
+	overflow: scroll;
+	height: 1000px;
+	width: 100%;
+}
+
+#fenetre.fimgg {
+	top: 33%;
+}	
+
+
+
+.ul {
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+.vide{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.4);
+	flex-direction: column;
+	margin-top: 8%;
+}
+
+form{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+label{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2em;
+}
+
+.email{
+	height: 34px;
+	width: 300px;
+	font-size: 0.9em;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	padding: 0 10px;
+	text-align: center;
+	border: 1.5px solid white;
+	font-family: "Retro";
+}
+
+.message{
+	margin: 0px;
+	height: 120px;
+	min-height: 120px;
+	width: 300px;
+	min-width: 300px;
+	max-width: 500px;
+	font-size: 0.9em;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	padding: 5px 10px;
+	border: 1.5px solid white;
+	font-family: "Retro";
+}
+
+
+	
+.envoyer{
+	border-radius: 10px;
+	border: 2px solid white;
+	height: 40px;
+	width: 151px;
+	font-size: 1.2em;
+	margin: 10px;
+	color: white;
+	background-color: transparent;
+	cursor: pointer;
+	margin-bottom:10%;
+	font-family: "Retro";
+}
+
+.meContacter{
+	font-size:1.5em;
+}
+
+br{
+	user-select: none;
+}
+
+#Projets_3D, #Projets_video, #Projets_graphiques, #Musiques{
+	display: none;
+}
+
+@media screen and (min-width: 805px) {
+	.dprojets{
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	#fenetre{
+	width: 750px;
+	height: 422px;
+	margin-top: -211px;
+	margin-left: -375px;
+	}
+}
+
+@media screen and (max-width: 775px) {
+	#fenetre{
+	width: 400px;
+	height: 225px;
+	margin-top: -120px;
+	margin-left: -200px;
+	}
+}
