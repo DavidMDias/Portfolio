@@ -15,21 +15,59 @@ function fondu()
 
 function btnsAfficher()
 {
+	var Projets_3D, Projets_video, Projets_graphiques, Musiques;
+
 	document.querySelector(".vide").addEventListener("mousedown", function () {
 		document.querySelector(".vide").style.display = "none";
 	});
 
 	document.querySelector(".btnProjets3D").addEventListener("mousedown", function () {
-		document.querySelector("#Projets_3D").style.display = "flex";
+		if (Projets_3D==false) {
+			Projets_3D = true;
+			document.querySelector(".Projets_3D").style.display = "none";
+			document.querySelector(".hrefProjets3D").textContent = "Afficher";
+		}
+		else {
+			Projets_3D = false;
+			document.querySelector(".Projets_3D").style.display = "flex";
+			document.querySelector(".hrefProjets3D").textContent = "Cacher";
+        }
 	});
 	document.querySelector(".btnProjetsVideo").addEventListener("mousedown", function () {
-		document.querySelector("#Projets_video").style.display = "flex";
+		if (Projets_video == false) {
+			Projets_video = true;
+			document.querySelector(".Projets_video").style.display = "none";
+			document.querySelector(".hrefProjetsVideo").textContent = "Afficher";
+		}
+		else {
+			Projets_video = false;
+			document.querySelector(".Projets_video").style.display = "flex";
+			document.querySelector(".hrefProjetsVideo").textContent = "Cacher";
+		}
 	});
 	document.querySelector(".btnProjetsGraphiques").addEventListener("mousedown", function () {
-		document.querySelector("#Projets_graphiques").style.display = "flex";
+		if (Projets_graphiques == false) {
+			Projets_graphiques = true;
+			document.querySelector(".Projets_graphiques").style.display = "none";
+			document.querySelector(".hrefProjetsGraphiques").textContent = "Afficher";
+		}
+		else {
+			Projets_graphiques = false;
+			document.querySelector(".Projets_graphiques").style.display = "flex";
+			document.querySelector(".hrefProjetsGraphiques").textContent = "Cacher";
+		}
 	});
 	document.querySelector(".btnMusiques").addEventListener("mousedown", function () {
-		document.querySelector("#Musiques").style.display = "flex";
+		if (Musiques == false) {
+			Musiques = true;
+			document.querySelector(".Musiques").style.display = "none";
+			document.querySelector(".hrefMusiques").textContent = "Afficher";
+		}
+		else {
+			Musiques = false;
+			document.querySelector(".Musiques").style.display = "flex";
+			document.querySelector(".hrefMusiques").textContent = "Cacher";
+		}
 	});
 }
 

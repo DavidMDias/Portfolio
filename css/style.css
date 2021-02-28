@@ -299,7 +299,7 @@ br{
 	user-select: none;
 }
 
-#Projets_3D, #Projets_video, #Projets_graphiques, #Musiques{
+.Projets_3D, .Projets_video, .Projets_graphiques, .Musiques{
 	display: none;
 }
 
