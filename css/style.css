@@ -115,7 +115,7 @@ main section{
 	position: relative;
 	width: 350px;
 	height: 645px;
-	max-width: 350px;
+	max-width: 360px;
 	margin: 20px 22px;
 	background-color: rgba(0, 0, 0, 0.5);
 }
