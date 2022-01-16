@@ -111,7 +111,24 @@ function btnsVideo()
 	document.querySelector(".vide").addEventListener("mousedown", function(){
 		fermerFenetresVideos();
 	});
-
+	document.querySelector(".video21").addEventListener("mousedown", function () {
+		afficherVideo(21);
+	});
+	document.querySelector(".video20").addEventListener("mousedown", function () {
+		afficherVideo(20);
+	});
+	document.querySelector(".video19").addEventListener("mousedown", function () {
+		afficherVideo(19);
+	});
+	document.querySelector(".video18").addEventListener("mousedown", function () {
+		afficherVideo(18);
+	});
+	document.querySelector(".video17").addEventListener("mousedown", function () {
+		afficherVideo(17);
+	});
+	document.querySelector(".video16").addEventListener("mousedown", function () {
+		afficherVideo(16);
+	});
 	document.querySelector(".video15").addEventListener("mousedown", function () {
 		afficherVideo(15);
 	});
@@ -174,7 +191,7 @@ function fermerFenetresVideos()
 	document.querySelector(".vide").style.display = "none";
 
 	var i;
-	for (i = 0; i <= 15; i++) {
+	for (i = 0; i <= 21; i++) {
 		document.querySelector(".fenetreVideo"+i).style.display = "none";
 		document.querySelector(".fenetreVideo"+i).getElementsByTagName("iframe")[0].src = "";
 	}
@@ -232,6 +249,24 @@ function recevoirUrl(i)
 			return url;
 		case 15:
 			url = "https://www.youtube.com/embed/902awzxaVaM?rel=0";
+			return url;
+		case 16:
+			url = "https://www.youtube.com/embed/5oNdgapyMzc?rel=0";
+			return url;
+		case 17:
+			url = "https://www.youtube.com/embed/7mODDnPMOKY?rel=0";
+			return url;
+		case 18:
+			url = "https://www.youtube.com/embed/902awzxaVaM?rel=0";
+			return url;
+		case 19:
+			url = "https://www.youtube.com/embed/902awzxaVaM?rel=0";
+			return url;
+		case 20:
+			url = "https://www.youtube.com/embed/2xh0f9WcrqM?rel=0";
+			return url;
+		case 21:
+			url = "https://www.youtube.com/embed/G_N3ML95QNU?rel=0";
 			return url;
 	}
 }
