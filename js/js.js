@@ -245,10 +245,10 @@ function recevoirUrl(i)
 			url = "https://www.youtube.com/embed/8JrQzxOvaFY?rel=0";
 			return url;
 		case 14:
-			url = "https://www.youtube.com/embed/loPUnJBFLLU?rel=0";
+			url = "https://www.youtube.com/embed/902awzxaVaM?rel=0";
 			return url;
 		case 15:
-			url = "https://www.youtube.com/embed/902awzxaVaM?rel=0";
+			url = "https://www.youtube.com/embed/loPUnJBFLLU?rel=0";
 			return url;
 		case 16:
 			url = "https://www.youtube.com/embed/5oNdgapyMzc?rel=0";
