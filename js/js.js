@@ -111,6 +111,9 @@ function btnsVideo()
 	document.querySelector(".vide").addEventListener("mousedown", function(){
 		fermerFenetresVideos();
 	});
+	document.querySelector(".video22").addEventListener("mousedown", function () {
+		afficherVideo(22);
+	});
 	document.querySelector(".video21").addEventListener("mousedown", function () {
 		afficherVideo(21);
 	});
@@ -191,7 +194,7 @@ function fermerFenetresVideos()
 	document.querySelector(".vide").style.display = "none";
 
 	var i;
-	for (i = 0; i <= 21; i++) {
+	for (i = 0; i <= 22; i++) {
 		document.querySelector(".fenetreVideo"+i).style.display = "none";
 		document.querySelector(".fenetreVideo"+i).getElementsByTagName("iframe")[0].src = "";
 	}
@@ -267,6 +270,9 @@ function recevoirUrl(i)
 			return url;
 		case 21:
 			url = "https://www.youtube.com/embed/G_N3ML95QNU?rel=0";
+			return url;
+		case 22:
+			url = "https://www.youtube.com/embed/8EmOgfH3Kls?rel=0";
 			return url;
 	}
 }
