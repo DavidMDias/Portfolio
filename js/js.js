@@ -257,7 +257,7 @@ function recevoirUrl(i)
 			url = "https://www.youtube.com/embed/7mODDnPMOKY?rel=0";
 			return url;
 		case 18:
-			url = "https://www.youtube.com/embed/yGIe5FguG5Y?rel=0";
+			url = "https://www.youtube.com/embed/uCBbueTDQH8?rel=0";
 			return url;
 		case 19:
 			url = "https://www.youtube.com/embed/NrvLRSrjBGY?rel=0";
