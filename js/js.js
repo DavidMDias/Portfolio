@@ -12,61 +12,129 @@ function fondu()
 	  }
 	}
 }
+function changerLangue()
+{
+	document.querySelectorAll(".EN").forEach(el => {
+		el.style.display = "none";
+	});
+
+	var FR;
+
+	document.querySelector(".changerLangue").addEventListener("mousedown", function () {
+		if (FR == false) {
+			FR = true;
+			document.querySelectorAll(".EN").forEach(el => {
+				el.style.display = "none";
+			});
+			document.querySelectorAll(".FR").forEach(el => {
+				el.style.display = "block";
+			});
+			document.querySelector(".changerLangue").textContent = "EN";
+
+			
+		}
+		else {
+			FR = false;
+			document.querySelectorAll(".EN").forEach(el => {
+				el.style.display = "block";
+			});
+			document.querySelectorAll(".FR").forEach(el => {
+				el.style.display = "none";
+			});
+			document.querySelector(".changerLangue").textContent = "FR";
+		}
+	});
+}
 
 function btnsAfficher()
 {
-	var Projets_3D, Projets_video, Projets_graphiques, Musiques;
+	var AutresProjets, AutresJeux, Projets_3D, Projets_video, Projets_graphiques, Musiques;
 
 	document.querySelector(".vide").addEventListener("mousedown", function () {
 		document.querySelector(".vide").style.display = "none";
 	});
-
+	document.querySelector(".btnAutresProjets").addEventListener("mousedown", function () {
+		if (AutresProjets == false) {
+			AutresProjets = true;
+			document.querySelector(".AutresProjets").style.display = "none";
+			document.querySelector(".hrefAutresProjetsFR").textContent = "Afficher";
+			document.querySelector(".hrefAutresProjetsEN").textContent = "Show";
+		}
+		else {
+			AutresProjets = false;
+			document.querySelector(".AutresProjets").style.display = "block";
+			document.querySelector(".hrefAutresProjetsFR").textContent = "Cacher";
+			document.querySelector(".hrefAutresProjetsEN").textContent = "Hide";
+		}
+	});
+	document.querySelector(".btnAutresJeux").addEventListener("mousedown", function () {
+		if (AutresJeux == false) {
+			AutresJeux = true;
+			document.querySelector(".AutresJeux").style.display = "none";
+			document.querySelector(".hrefAutresJeuxFR").textContent = "Afficher";
+			document.querySelector(".hrefAutresJeuxEN").textContent = "Show";
+		}
+		else {
+			AutresJeux = false;
+			document.querySelector(".AutresJeux").style.display = "flex";
+			document.querySelector(".hrefAutresJeuxFR").textContent = "Cacher";
+			document.querySelector(".hrefAutresJeuxEN").textContent = "Hide";
+		}
+	});
 	document.querySelector(".btnProjets3D").addEventListener("mousedown", function () {
 		if (Projets_3D==false) {
 			Projets_3D = true;
 			document.querySelector(".Projets_3D").style.display = "none";
-			document.querySelector(".hrefProjets3D").textContent = "Afficher";
+			document.querySelector(".hrefProjets3DFR").textContent = "Afficher";
+			document.querySelector(".hrefProjets3DEN").textContent = "Show";
 		}
 		else {
 			Projets_3D = false;
 			document.querySelector(".Projets_3D").style.display = "flex";
-			document.querySelector(".hrefProjets3D").textContent = "Cacher";
+			document.querySelector(".hrefProjets3DFR").textContent = "Cacher";
+			document.querySelector(".hrefProjets3DEN").textContent = "Hide";
         }
 	});
 	document.querySelector(".btnProjetsVideo").addEventListener("mousedown", function () {
 		if (Projets_video == false) {
 			Projets_video = true;
 			document.querySelector(".Projets_video").style.display = "none";
-			document.querySelector(".hrefProjetsVideo").textContent = "Afficher";
+			document.querySelector(".hrefProjetsVideoFR").textContent = "Afficher";
+			document.querySelector(".hrefProjetsVideoEN").textContent = "Show";
 		}
 		else {
 			Projets_video = false;
 			document.querySelector(".Projets_video").style.display = "flex";
-			document.querySelector(".hrefProjetsVideo").textContent = "Cacher";
+			document.querySelector(".hrefProjetsVideoFR").textContent = "Cacher";
+			document.querySelector(".hrefProjetsVideoEN").textContent = "Hide";
 		}
 	});
 	document.querySelector(".btnProjetsGraphiques").addEventListener("mousedown", function () {
 		if (Projets_graphiques == false) {
 			Projets_graphiques = true;
 			document.querySelector(".Projets_graphiques").style.display = "none";
-			document.querySelector(".hrefProjetsGraphiques").textContent = "Afficher";
+			document.querySelector(".hrefProjetsGraphiquesFR").textContent = "Afficher";
+			document.querySelector(".hrefProjetsGraphiquesEN").textContent = "Show";
 		}
 		else {
 			Projets_graphiques = false;
 			document.querySelector(".Projets_graphiques").style.display = "flex";
-			document.querySelector(".hrefProjetsGraphiques").textContent = "Cacher";
+			document.querySelector(".hrefProjetsGraphiquesFR").textContent = "Cacher";
+			document.querySelector(".hrefProjetsGraphiquesEN").textContent = "Hide";
 		}
 	});
 	document.querySelector(".btnMusiques").addEventListener("mousedown", function () {
 		if (Musiques == false) {
 			Musiques = true;
 			document.querySelector(".Musiques").style.display = "none";
-			document.querySelector(".hrefMusiques").textContent = "Afficher";
+			document.querySelector(".hrefMusiquesFR").textContent = "Afficher";
+			document.querySelector(".hrefMusiquesEN").textContent = "Show";
 		}
 		else {
 			Musiques = false;
 			document.querySelector(".Musiques").style.display = "flex";
-			document.querySelector(".hrefMusiques").textContent = "Cacher";
+			document.querySelector(".hrefMusiquesFR").textContent = "Cacher";
+			document.querySelector(".hrefMusiquesEN").textContent = "Hide";
 		}
 	});
 }

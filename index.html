@@ -1,378 +1,993 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Portfolio</title>
-		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://kit.fontawesome.com/0ce1a7f280.js"></script>
-		<script src="js/js.js"></script>
-	</head>
-	<body>
-		<header>
-			<h1>David Dias</h1>
-			<h3>Programmeur de jeux vidéo</h3>
-			<h4><a href="#Mes_jeux">V</a></h4>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Portfolio</title>
+	<!--<link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/0ce1a7f280.js"></script>
+	<script src="js/js.js"></script>
+</head>
+<body>
+	<section id="miniHeader">
+		<p class="changerLangue" style="cursor: pointer;">EN</p>
+		<a class="reset-this" href="#About" style="cursor: pointer;"><lang class="FR">À propos / Contact</lang><lang class="EN">About / Contact</lang></a>
+	</section>
+	
+	<header>
+		<h1>David Dias</h1>
+		<h3>
+			<lang class="FR">Programmeur de jeux vidéo</lang>
+			<lang class="EN">Video game programmer</lang>
+		</h3>
+		<h4><a href="#Mes_jeux">V</a></h4>
 
-		</header>
-		<main id="Mes_jeux">
-			<h2>Mes jeux</h2>
-			<p class="btnCategorie" style="display: none;"><span class="btn video0" style="cursor">Cliquez ici pour visualiser la demo reel</span></p>
-			<section>
-				<div class="projet">
-					<img src="img/TalesOfWar.png" alt="">
-					<p>
+	</header>
+	<main id="Mes_jeux">
+		<h2>
+			<lang class="FR">Mes jeux</lang>
+			<lang class="EN">My games</lang>
+		</h2>
+		<p class="btnCategorie" style="display: none;"><span class="btn video0" style="cursor"><lang class="FR">Cliquez ici pour visualiser la demo reel</lang><lang class="EN">Click here to view the demo reel</lang></span></p>
+		<section>
+			<div class="projet">
+				<img src="img/TalesOfWar.png" alt="">
+				<p>
+					<lang class="FR">
+						Tales of War est un jeu multijoueur médiéval où le but est de capturer tous les drapeaux ennemis pour gagner. Avec 20 classes au choix pour aller au combat.
 						En production depuis février 2020. Fait avec Unity et MLAPI.
 						Je fais tout sauf les sons/musiques et les animations. J'intègre et programme tout le reste.
-						Les terrains sont fait par la communauté (incluant moi aussi).
-						Tales of War est un jeu multijoueur médiéval où le but est de capturer tous les drapeaux ennemis pour gagner. Avec 20 classes au choix pour aller au combat.
+						Les terrains sont faits par la communauté (incluant moi aussi).
+					</lang>
+					<lang class="EN">
+						Tales of War is a medieval multiplayer game where the goal is to capture all enemy flags to win. With 20 classes to choose from to go into battle.
+						In production since February 2020. Made with Unity and MLAPI.
+						I do everything except sounds/music and animations. I integrate and program everything else.
+						The maps are made by the community (including me too).
+					</lang>
+				</p>
+				<a href="https://trello.com/b/XD2NXKgA/tales-of-war" class="btn"><div><lang class="FR">Trello</lang><lang class="EN">Trello</lang></div></a>
+				<a href="https://store.steampowered.com/app/1270050/Tales_of_War/" class="jouer"><div><lang class="FR">Steam</lang><lang class="EN">Steam</lang></div></a>
+			</div>
+			<div class="dprojets">
+				<div class="projet">
+					<img src="img/ChildsMind.png" alt="">
+					<p>
+						<lang class="FR">
+							Jeu d'horreur où l’on joue le rôle d'un enfant qui a perdu ses amis dans une maison abandonnée. Il va devoir les retrouver à l'intérieur de la maison.
+							Les enfants, lorsqu'ils ont peur dans le noir, ont tendance à imaginer que tout est un monstre.
+							Donc, le but du jeu est de retrouver ses amis et d'éviter de regarder les meubles sous peur de devoir les affronter.
+						</lang>
+						<lang class="EN">
+							Horror game where you play the role of a kid who has lost his friends in an abandoned house. He will have to find them inside the house.
+							Kids, when scared in the dark, tend to imagine that everything is a monster.
+							So the goal is to find your friends and avoid looking at furnitures or else you'll have to confront them.
+						</lang>
 					</p>
-					<a href="https://trello.com/b/XD2NXKgA/tales-of-war" class="btn"><div>Trello</div></a>
-					<a href="https://store.steampowered.com/app/1270050/Tales_of_War/" class="jouer"><div>Steam</div></a>
+					<a class="btn video19"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+					<a href="https://qendajar.itch.io/childs-mind" class="jouer"><div><lang class="FR">Télécharger</lang><lang class="EN">Download</lang></div></a>
 				</div>
-				<div class="dprojets">
-					<div class="projet">
-						<img src="img/ChildsMind.png" alt="">
-						<p>
-							Automne 2021. Fait avec Unity. En équipe de 3, j'ai fait du rendering, les sons et programmé la moitié du jeu(je n'ai pas programmé les CCC). 
-							C'est un jeu d'horreur qui simule la peur d'un enfant. 
-							Donc il va imaginer des meubles se transformer lentement en monstre et il faut éviter de les regarder sinon l'enfant devra passer par un QTE pour se calmer. 
-							S'il ne réussi pas à se calmer, il y a un jumpscare et il perd. Le but du jeu est de trouver ses amis à l'interieur de la maison.
-						</p>
-						<a class="btn video19"><div>Regarder</div></a>
-						<a href="https://qendajar.itch.io/childs-mind" class="jouer"><div>Télécharger</div></a>
-					</div>
-					<div class="projet">
-						<img src="img/WarriorsArena.png" alt="">
-						<p>
-							Automne 2021. Game Jam réalisé en 4 jours. 
-							Mon rôle était chef d'équipe et programmeur multijoueur. 
-							J'ai aussi programmé le hook, l'effet de stun, l'invisibilité et les effets de potions aléatoire. 
-							C'est un jeu de tir, 1 vs 1, multijoueur 2D avec des plein d'habiletés. 
-							Les joueurs peuvent choisir entre 4 différents personnages pour combattre.
-						</p>
-						<a class="btn video18"><div>Regarder</div></a>
-						<a href="https://qendajar.itch.io/warriors-arena" class="jouer"><div>Jouer</div></a>
-					</div>
+				<div class="projet">
+					<img src="img/WarriorsArena.png" alt="">
+					<p>
+						<lang class="FR">
+							Jeu de tir, 1 vs 1, multijoueur 2D avec plein d'habiletés. Les joueurs peuvent choisir entre 4 différents personnages pour combattre.
+						</lang>
+						<lang class="EN">
+							Shooter, 1 vs 1, 2D multiplayer with lots of abilities. Players can choose between 4 different characters to fight.
+						</lang>
+					</p>
+					<a class="btn video18"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+					<a href="https://qendajar.itch.io/warriors-arena" class="jouer"><div><lang class="FR">Jouer</lang><lang class="EN">Play</lang></div></a>
 				</div>
-				<div class="dprojets">
-					<div class="projet">
-						<img src="img/RailOVania.png" alt="">
-						<p>
-							Fait en août 2021. Game jam réalisé en un total de 24 heures. Fait avec Unity pour Android. 
-							En équipe de 3, j'ai render, programmé, intégré et animé. 
-							Un de mes amis a fait les sons/musique et mon autre ami a fait les modeles 3D. 
-							Un jeu style Pokemon Snap où il faut tirer sur des cibles et des mineraux pour avoir le plus grand score. 
-							Avec des graphiques à la Game Boy.
-						</p>
-						<a class="btn video22"><div>Regarder</div></a>
-						<a href="https://qendajar.itch.io/rail-o-vania" class="jouer"><div>Télécharger</div></a>
-					</div>
-					<div class="projet">
-						<img src="img/JetpackPistolator.jpg" alt="">
-						<p>
-							Fait en janvier 2021. Game jam réalisé en un total de 24 heures.
-							Fait avec Unity et Photon PUN.
-							En équipe de 2, j'ai programmé et intégré et mon ami a fait la musique, les sons et les arts visuels.
-							C'est un jeu de tir multijoueur 2D avec des jetpacks. 2 à 4 joueurs en ligne.
+			</div>
+			<div class="dprojets">
+				<div class="projet">
+					<img src="img/RailOVania.png" alt="">
+					<p>
+						<lang class="FR">
+							Un jeu Rail shooter où il faut tirer sur des cibles, des mineraux et des chauves-souris pour avoir le plus grand score.
+							Avec des graphismes à la Game Boy.
+						</lang>
+						<lang class="EN">
+							A Rail shooter game where you have to shoot targets, minerals and bats to get the highest score.
+							With Game Boy-like graphics.
+						</lang>
+					</p>
+					<a class="btn video22"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+					<a href="https://qendajar.itch.io/rail-o-vania" class="jouer"><div><lang class="FR">Télécharger</lang><lang class="EN">Download</lang></div></a>
+				</div>
+				<div class="projet">
+					<img src="img/JetpackPistolator.jpg" alt="">
+					<p>
+						<lang class="FR">
+							Un jeu de tir de 2 à 4 joueurs, multijoueur, 2D, avec des jetpacks.
 							Les joueurs peuvent choisir entre 10 différents personnages pour combattre.
-						</p>
-						<a class="btn video5"><div>Regarder</div></a>
-						<a href="https://qendajar.itch.io/jetpack-pistolator" class="jouer"><div>Jouer</div></a>
-					</div>
+						</lang>
+						<lang class="EN">
+							A 2-4 player game, multiplayer, 2D shooter with jetpacks.
+							Players can choose between 10 different characters to fight.
+						</lang>
+					</p>
+					<a class="btn video5"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+					<a href="https://qendajar.itch.io/jetpack-pistolator" class="jouer"><div><lang class="FR">Jouer</lang><lang class="EN">Play</lang></div></a>
 				</div>
-				<div class="dprojets">
-					<div class="projet">
-						<img src="img/SmolRPG.jpg" alt="">
-						<p>
-							Hivers 2020. Fait avec Unity pour Android. J’ai eu 7 semaines pour faire ce jeu.
-							Tout est fait par moi sauf la musique.
-							C'est un petit RPG très simple avec un petit terrain et 2 magasins.
+			</div>
+			<div class="dprojets">
+				<div class="projet">
+					<img src="img/SmolRPG.jpg" alt="">
+					<p>
+						<lang class="FR">
+							C'est un petit RPG avec du combat très simple, un petit terrain et 2 magasins.
 							Le joueur a un inventaire et des statistiques sur son personnage.
-							Le but de ce projet était d’apprendre par moi-même comment faire un jeu mobile.
-							(Apprendre à mettre des publicités et compter le temps hors jeux).
-						</p>
-						<a class="btn video4"><div>Regarder</div></a>
-						<a href="https://drive.google.com/file/d/12IpKDtZ2_KQ-qJ4Dn2ze6yU7F25Ad73Q/view?usp=sharing" class="jouer"><div>Télécharger</div></a>
-					</div>
-					<div class="projet">
-						<img src="img/Elementaris.jpg" alt="">
-						<p>
-							Fait en Automne 2019 avec Unity et en équipe de 5.
-							Mon rôle était chef d’équipe et conception sonore.
-							J’ai programmé les contrôles en première personne et les cameras.
-							J'ai fait beaucoup de tâches hors de mon rôle en extra (réparer plein de bugs et programmer une tourelle).
-							J’ai aussi équilibré le jeu pour qu’il soi jouable et difficile.
-							C’était la première fois que je composais une musique et j’en ai fait 2 pour ce jeu.
-							C'est un tower defense où on peut entrer dans les tourelles et en prendre contrôle.
-						</p>
-						<a class="btn video3"><div>Regarder</div></a>
-						<a href="https://davidmdias.itch.io/elementaris" class="jouer"><div>Jouer</div></a>
-					</div>
+						</lang>
+						<lang class="EN">
+							It's a small RPG with very simple combat, a small terrain and 2 shops.
+							The player has an inventory and statistics on his character.
+						</lang>
+					</p>
+					<a class="btn video4"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+					<a href="https://drive.google.com/file/d/12IpKDtZ2_KQ-qJ4Dn2ze6yU7F25Ad73Q/view?usp=sharing" class="jouer"><div><lang class="FR">Télécharger</lang><lang class="EN">Download</lang></div></a>
 				</div>
+				<div class="projet">
+					<img src="img/Elementaris.jpg" alt="">
+					<p>
+						<lang class="FR">
+							Un tower defense où on peut entrer dans les tours et en prendre contrôle. 4 niveaux, 4 tours et 4 types d'ennemis.
+							Le joueur peut améliorer ses tours pendant et avant une partie.
+						</lang>
+						<lang class="EN">
+							A tower defense where you can enter towers and take control of them. 4 levels, 4 towers and 4 types of enemies.
+							The player can improve his towers during and before a game.
+						</lang>
+					</p>
+					<a class="btn video3"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+					<a href="https://davidmdias.itch.io/elementaris" class="jouer"><div><lang class="FR">Jouer</lang><lang class="EN">Play</lang></div></a>
+				</div>
+			</div>
+		</section>
+		<h2 id="AutresProjets"><lang class="FR">Autres projets</lang><lang class="EN">Other projects</lang></h2>
+		<p class="btnCategorie"><span class="btnAutresProjets" style="cursor"><a class="btnCategorie hrefAutresProjets" href="#AutresProjets"><lang class="FR hrefAutresProjetsFR">Afficher</lang><lang class="EN hrefAutresProjetsEN">Show</lang></a></span></p>
+		<section class="AutresProjets">
+			<h2 id="AutresJeux"><lang class="FR">Autres jeux</lang><lang class="EN">Other games</lang></h2>
+			<p class="btnCategorie"><span class="btnAutresJeux" style="cursor"><a class="btnCategorie hrefAutresJeux" href="#AutresJeux"><lang class="FR hrefAutresProjetsFR">Afficher</lang><lang class="EN hrefAutresProjetsEN">Show</lang></a></span></p>
+			<section class="AutresJeux">
 				<div class="dprojets">
 					<div class="projet">
 						<img src="img/4RENA.jpg" alt="">
 						<p>
-							Fait en Hivers 2019 avec Unity et en équipe de 2.
-							J’ai programmé le personnage, le magasin, les ennemis et assemblé la moitié du terrain qui est entièrement fait avec des prefabs d'Unity Store.
-							C'est un jeu où le but n’est que de trouver les monstres et les tuer.
-							À chaque vague les monstres sont plus nombreux et plus fort.
-							Il y a un magasin pour acheter des potions et des meilleurs armes.
+							<lang class="FR">
+								Un jeu où le but n’est que de trouver les monstres et les tuer. À chaque vague les monstres sont plus nombreux et plus forts.
+								Il y a un magasin pour acheter des potions et de meilleures armes.
+								Fait en hivers 2019 avec Unity et en équipe de 2. J’ai programmé le personnage, le magasin, les ennemis et assemblé la moitié du terrain (des prefabs d'Unity Asset Store).
+							</lang>
+							<lang class="EN">
+								A game where the objective is simply to find the monsters and kill them. With each wave the number of monsters is increased and they become stronger.
+								There is a store to buy potions and better weapons.
+								Made in winter 2019 with Unity and in a team of 2. I programmed the character, the store, the enemies and assembled half of the terrain (prefabs from Unity Asset Store).
+							</lang>
 						</p>
-						<a class="btn video2"><div>Regarder</div></a>
-						<a href="https://davidmdias.itch.io/4rena" class="jouer"><div>Télécharger</div></a>
+						<a class="btn video2"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+						<a href="https://davidmdias.itch.io/4rena" class="jouer"><div><lang class="FR">Télécharger</lang><lang class="EN">Download</lang></div></a>
 					</div>
 					<div class="projet">
 						<img src="img/TheFightForces.jpg" alt="">
 						<p>
-							Fait en Hivers 2018 avec Unity 2D, sans équipe. C'est mon tout premier jeu.
-							J'ai tout fait sauf les sons et les sprites qui ont été fait par un ami qui voulait m’aider.
-							J’ai voulu dépasser les limites de ce qui était demandé, car j’ai vraiment aimé faire un jeu.
-							C'est un jeu stratégique multijoueur local sur ordinateur.
-							Le but est de contrôler ses trois soldats et d’attaquer l’autre joueur avec un choix de 4 armes.
+							<lang class="FR">
+								Un jeu stratégique à tour par tour multijoueur local. Le joueur peut contrôler ses trois soldats et attaquer
+								ceux de l’autre joueur avec une des 4 armes et une quantité d'action limitée.
+								Fait en hivers 2018 avec Unity 2D, sans équipe. C'est mon tout premier jeu. J'ai tout fait sauf l'audio et les sprites qui ont été faits par un ami qui voulait m’aider.
+							</lang>
+							<lang class="EN">
+								A local multiplayer turn-based strategy game. The player can control his 3 soldiers and attack
+								those of the other player with one of the 4 weapons and a limited amount of action.
+								Made in winters 2018 with Unity 2D, without a team. This is my very first game. I did everything except the audio and the sprites which were made by a friend who wanted to help me.
+							</lang>
 						</p>
-						<a class="btn video1"><div>Regarder</div></a>
-						<a href="https://davidmdias.itch.io/the-fightforces" class="jouer"><div>Jouer</div></a>
+						<a class="btn video1"><div><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
+						<a href="https://davidmdias.itch.io/the-fightforces" class="jouer"><div><lang class="FR">Jouer</lang><lang class="EN">Play</lang></div></a>
 					</div>
 				</div>
 			</section>
-			<h2 id="Projets_3D">Mes projets 3D</h2>
-			<p class="btnCategorie"><span class="btnProjets3D" style="cursor"><a class="btnCategorie hrefProjets3D" href="#Projets_3D">Afficher</a></span></p>
+			<h2 id="Projets_3D"><lang class="FR">Projets 3D</lang><lang class="EN">3D projects</lang></h2>
+			<p class="btnCategorie"><span class="btnProjets3D" style="cursor"><a class="btnCategorie hrefProjets3D" href="#Projets_3D"><lang class="FR hrefProjets3DFR">Afficher</lang><lang class="EN hrefProjets3DEN">Show</lang></a></span></p>
 			<section class="Projets_3D">
 				<div class="projet sp" style="margin-top: 30px;">
 					<img src="img/SmolRPG3D.png" alt="">
 					<p>
-						Hivers 2020. C'est les models 3Ds de mon jeu SmolRPG. J'ai fait tous les models 3Ds avant de programmer le jeu. C'était la première fois que
-						j'essayai un style cute et low poly. Fait avec Maya.
+						<lang class="FR">
+						Hivers 2020. C'est les modèles 3Ds de mon jeu SmolRPG. J'ai fait tous les modèles 3Ds avant de programmer le jeu. 
+						C'était la première fois que j'essayai un style cute et low poly. Fait avec Maya.</lang>
+						<lang class="EN">
+							Winters 2020. This is the 3D models from my game: SmolRPG. I made all the 3D models before programming the game.
+							It was the first time I tried a cute and low poly style. Made with Maya.
+						</lang>
 					</p>
-					<a class="btn image0"><div class="soloBtn">Regarder</div></a>
+					<a class="btn image0"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 				</div>
 				<div class="dprojets">
 					<div class="projet sp">
 						<img src="img/Eau.png" alt="">
 						<p>
-							Automne 2019. Une scène 3D avec un personnage de mon jeu Elementaris. Je n'ai pas fait la tourelle et le personnage. J'ai fait le décor et
-							la balle qui perse la glace. Fait avec Maya.
+							<lang class="FR">
+								Automne 2019. Une scène 3D avec un personnage de mon jeu Elementaris. Je n'ai pas fait la tourelle et le personnage.
+								J'ai fait le décor et la balle qui perce la glace. Fait avec Maya.
+							</lang>
+							<lang class="EN">
+								Fall 2019. A 3D scene with a character from my Elementaris game. I didn't make the turret and the character. 
+								I made the scenery and the ball that pierces the ice. Made with Maya.
+							</lang>
 						</p>
-						<a class="btn video13"><div class="soloBtn">Regarder</div></a>
+						<a class="btn video13"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet sp">
 						<img src="img/Personnage.png" alt="">
-						<p>Hivers 2019. Un personnage créé en cours de design par moi et mon équipe. J'ai modelé le personnage selon le croquis que mon ami a fait. Fait avec Maya.</p>
-						<a class="btn image1"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">
+								Hivers 2019. Un personnage créé en cours de design par moi et mon équipe. 
+								J'ai modelé le personnage selon le croquis que mon ami a fait. Fait avec Maya.
+							</lang>
+							<lang class="EN">
+								Winters 2019. A character created in design class by me and my team. 
+								I modeled the character according to the sketch my friend made. Made with Maya.
+							</lang>
+						</p>
+						<a class="btn image1"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 				<div class="dprojets">
 					<div class="projet sp">
 						<img src="img/Sousmatrain.png" alt="">
-						<p>Automne 2018. En cours de 3D, je devais modeler un moyen de transport. J'ai modelé un sous-marin train avec l'aspect d'un ornithorynque. Fait avec Maya.</p>
-						<a class="btn video12"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">
+								Automne 2018. En cours de 3D, je devais modeler un moyen de transport. J'ai modelé un sous-marin train avec l'aspect d'un ornithorynque. Fait avec Maya.
+							</lang>
+							<lang class="EN">
+								Fall 2018. In 3D class, I had to model a vehicle. I modeled a train submarine with the appearance of a platypus. Made with Maya.
+							</lang>
+						</p>
+						<a class="btn video12"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet sp">
 						<img src="img/Coffre.png" alt="">
-						<p>Automne 2018. Mon tout premier TP en cours de 3D. Le travail était de modeler un objet. Comme premier TP, je trouve que c'est très bon. Fait avec Maya.</p>
-						<a class="btn video11"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Automne 2018. Mon tout premier TP en cours de 3D. Le travail était de modeler un objet. Comme premier TP, je trouve que c'est très bon. Fait avec Maya.</lang>
+							<lang class="EN">Fall 2018. My very first 3D project. I had to model an object. As a first TP, I think it's very good. Made with Maya.</lang>
+						</p>
+						<a class="btn video11"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 			</section>
-			<h2 id="Projets_video">Mes projets videos</h2>
-			<p class="btnCategorie"><span class="btnProjetsVideo" style="cursor"><a class="btnCategorie hrefProjetsVideo" href="#Projets_video">Afficher</a></span></p>
+			<h2 id="Projets_video"><lang class="FR">Projets vidéos</lang><lang class="EN">Video projects</lang></h2>
+			<p class="btnCategorie"><span class="btnProjetsVideo" style="cursor"><a class="btnCategorie hrefProjetsVideo" href="#Projets_video"><lang class="FR hrefProjetsVideoFR">Afficher</lang><lang class="EN hrefProjetsVideoEN">Show</lang></a></span></p>
 			<section class="Projets_video">
 				<div class="dprojets">
 					<div class="projet sp">
 						<img src="img/LeVent.png" alt="">
-						<p>Hivers 2019. Une animatique du cours de scénarisation. J'ai créé l'histoire, et fait le montage. Mon ami a fait les dessins. Les plans ont été fait à deux.</p>
-						<a class="btn video7"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Hivers 2019. Une animatique de mon cours de scénarisation. J'ai créé l'histoire, et fait le montage. Mon ami a fait les dessins. Les plans ont été faits à deux.</lang>
+							<lang class="EN">Winters 2019. An animatic from my scenarisation class. I created the story, and did the editing. My friend made the drawings. The plans were made together.</lang>
+						</p>
+						<a class="btn video7"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet sp">
 						<img src="img/Inparfait.png" alt="">
-						<p>Automne 2018. Un trailer pour un faux film. Fait en équipe de 2. J'ai fait le montage et mon ami a filmé. L'histoire et les plans ont été fait à deux.</p>
-						<a class="btn video8"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Automne 2018. Une bande-annonce pour un faux film. Fait en équipe de 2. J'ai fait le montage et mon ami a filmé. L'histoire et les plans ont été faits à deux.</lang>
+							<lang class="EN">Fall 2018. A trailer for a fake movie. Made with a team of 2. I did the editing and my friend filmed. The story and the shots were made together.</lang>
+						</p>
+						<a class="btn video8"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 				<div class="dprojets">
 					<div class="projet sp">
 						<img src="img/LeMetro.png" alt="">
-						<p>Automne 2018. Cours de vidéo. Fait avec mon ami. Le but était de choisir un sujet et à l'aide d'une caméra, faire plusieurs plans/axes différents qui était listé dans le devis.</p>
-						<a class="btn video9"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Automne 2018. Cours de vidéo. Fait avec mon ami. Le but était de choisir un sujet et à l'aide d'une caméra, faire plusieurs plans/axes différents qui étaient listés dans le devis.</lang>
+							<lang class="EN">Fall 2018. Video class. Made with my friend. The goal was to choose a subject and with a camera, make several different shots that were listed in the things to do.</lang>
+						</p>
+						<a class="btn video9"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet sp">
 						<img src="img/FireEmblem.png" alt="">
-						<p>Automne 2017. TP d'animation où il fallai créer l'intro d'un jeu vidéo juste avant le menu titre. Je me suis inspiré de l'intro d'Advance Wars 2 Black Hole Rising.</p>
-						<a class="btn video10"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Automne 2017. TP d'animation où il fallait créer l'intro d'un jeu vidéo juste avant le menu titre. Je me suis inspiré de l'intro d'Advance Wars 2 Black Hole Rising.</lang>
+							<lang class="EN">Fall 2017. Animation project where I had to create the intro of a video game just before the title menu. I was inspired by the intro of Advance Wars 2 Black Hole Rising.</lang>
+						</p>
+						<a class="btn video10"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 			</section>
-			<h2 id="Projets_graphiques">Mes projets graphiques</h2>
-			<p class="btnCategorie"><span class="btnProjetsGraphiques" style="cursor"><a class="btnCategorie hrefProjetsGraphiques" href="#Projets_graphiques">Afficher</a></span></p>
+			<h2 id="Projets_graphiques"><lang class="FR">Projets graphiques</lang><lang class="EN">Graphic projects</lang></h2>
+			<p class="btnCategorie"><span class="btnProjetsGraphiques" style="cursor"><a class="btnCategorie hrefProjetsGraphiques" href="#Projets_graphiques"><lang class="FR hrefProjetsGraphiquesFR">Afficher</lang><lang class="EN hrefProjetsGraphiquesEN">Show</lang></a></span></p>
 			<section class="Projets_graphiques">
 				<div class="dprojets">
 					<div class="projet sp">
 						<img src="img/Ice.png" alt="">
-						<p>Un personnage que j'ai modifié pour représenter un personnage d'une partie de GURPS (C'est comme D&D). Donc, j'ai ajouté le nom du personnage, un sniper et remplacer son pistolet par un toutou.</p>
-						<a class="btn image2"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Un personnage que j'ai modifié pour représenter un personnage d'une partie de GURPS (c'est comme D&D). Donc, j'ai ajouté le nom du personnage, un sniper et remplacer son pistolet par un toutou.</lang>
+							<lang class="EN">A character that I modified to represent a character from a game of GURPS (it's like D&D). So, I added the character's name, a sniper, and replaced her gun with a plushie.</lang>
+						</p>
+						<a class="btn image2"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet sp">
 						<img src="img/StarFox.png" alt="">
-						<p>Automne 2017. J'ai pris une photo d'une rivière au Portugal et j'ai décidé de le modifier en changeant  le temps de la journé et ajouter Fox et son vaisseau dans l'image.</p>
-						<a class="btn image3"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Automne 2017. J'ai pris une photo d'une rivière au Portugal et j'ai décidé de le modifier en changeant  le temps de la journée et ajouter Fox et son vaisseau dans l'image.</lang>
+							<lang class="EN">Fall 2017. I took a photo of a river in Portugal and decided to edit it by changing the time of the day and by adding Fox and his ship into the image.</lang>
+						</p>
+						<a class="btn image3"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 			</section>
-			<h2 id="Musiques">Mes musiques</h2>
-			<p class="btnCategorie"><span class="btnMusiques" style="cursor"><a class="btnCategorie hrefMusiques" href="#Musiques">Afficher</a></span></p>
+			<h2 id="Musiques"><lang class="FR">Musiques</lang><lang class="EN">Musics</lang></h2>
+			<p class="btnCategorie"><span class="btnMusiques" style="cursor"><a class="btnCategorie hrefMusiques" href="#Musiques"><lang class="FR hrefMusiquesFR">Afficher</lang><lang class="EN hrefMusiquesEN">Show</lang></a></span></p>
 			<section class="Musiques">
 				<div class="dprojets">
 					<div class="projet mus">
 						<img src="img/Accordeon6.png" alt="">
-						<p>Discovery of Gravitation sur l'accordéon. Ça vient du jeu Gravity Rush, mon jeu préféré.</p>
-						<a class="btn video21"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">
+								Discovery of Gravitation sur l'accordéon. Ça vient du jeu Gravity Rush, mon jeu préféré.
+							</lang>
+							<lang class="EN">
+								Discovery of Gravitation on the accordion. It's from Gravity Rush, my favorite game.
+							</lang>
+						</p>
+						<a class="btn video21"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet mus">
 						<img src="img/Accordeon5.png" alt="">
-						<p>LEVEL 5-judgelight sur l'accordéon. Ça vient de l'anime To Aru Kagaku no Railgun.</p>
-						<a class="btn video20"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">LEVEL 5-judgelight sur l'accordéon. Ça vient de l'anime To Aru Kagaku no Railgun.</lang>
+							<lang class="EN">LEVEL 5-judgelight on the accordion. It's from the anime To Aru Kagaku no Railgun.</lang>
+						</p>
+						<a class="btn video20"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 				<div class="dprojets">
 					<div class="projet mus">
 						<img src="img/Accordeon4.png" alt="">
-						<p>Lobby de Pokémon Unite sur l'accordéon.</p>
-						<a class="btn video17"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Lobby de Pokémon Unite sur l'accordéon.</lang>
+							<lang class="EN">Pokémon Unite Lobby on the accordion.</lang>
+						</p>
+						<a class="btn video17"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet mus">
 						<img src="img/Accordeon3.png" alt="">
-						<p>L'ending de l'anime Erased sur l'accordéon.</p>
-						<a class="btn video16"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">L'ending de l'anime Erased sur l'accordéon.</lang>
+							<lang class="EN">The ending of the anime Erased on the accordion.</lang>
+						</p>
+						<a class="btn video16"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 				<div class="dprojets">
 					<div class="projet mus">
 						<img src="img/Accordeon2.png" alt="">
-						<p>Snowbelle City sur l'accordéon. Ça vient du jeu Pokémon X Y.</p>
-						<a class="btn video14"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Snowbelle City sur l'accordéon. Ça vient du jeu Pokémon X Y.</lang>
+							<lang class="EN">Snowbelle City on the accordion. It's from Pokemon X Y.</lang>
+						</p>
+						<a class="btn video14"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 					<div class="projet mus">
 						<img src="img/Accordeon1.png" alt="">
-						<p>Twilight of the Gods sur l'accordéon. Ça vient du jeu Fire Emblem Gaiden et Fire Emblem Shadow of Valentia</p>
-						<a class="btn video15"><div class="soloBtn">Regarder</div></a>
+						<p>
+							<lang class="FR">Twilight of the Gods sur l'accordéon. Ça vient du jeu Fire Emblem Gaiden et Fire Emblem Shadow of Valentia.</lang>
+							<lang class="EN">Twilight of the Gods on the accordion. It's from Fire Emblem Gaiden and Fire Emblem Shadow of Valentia.</lang>
+						</p>
+						<a class="btn video15"><div class="soloBtn"><lang class="FR">Voir</lang><lang class="EN">See</lang></div></a>
 					</div>
 				</div>
 			</section>
-		</main>
-			<div class="vide"></div>
+		</section>
+	</main>
+	<div class="vide"></div>
 
-			<section id="fenetre" class="fenetreImage4 fimgg">
-				<img src="img/Inparfait.png" alt="">
-			</section>
-			<section id="fenetre" class="fenetreImage3 fimgg">
-				<div class="fimg">
-					<img src="img/StarfoxImg.png" alt="">
-					<img src="img/photo-portugal.jpg" alt="">
-				</div>
-			</section>
-			<section id="fenetre" class="fenetreImage2 fimgg">
-				<div class="fimg">
-					<img src="img/IceFull.png" alt="">
-					<img src="img/JoannaDark.jpg" alt="">
-				</div>
-			</section>
-			<section id="fenetre" class="fenetreImage1 fimgg">
-				<div class="fimg">
-					<img src="img/PersonnageImage.png" alt="">
-					<img src="img/Croquis.png" alt="">
-				</div>
-			</section>
-			<section id="fenetre" class="fenetreImage0 fimgg">
-				<img src="img/PocketRPG3DImage.jpg" alt="">
-			</section>
-			<section id="fenetre" class="fenetreVideo22 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo21 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo20 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo19 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo18 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo17 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo16 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo15 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo14 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo13 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo12 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo11 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo10 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo9 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo8 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo7 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo6 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo5 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo4 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo3 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo2 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo1 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
-			<section id="fenetre" class="fenetreVideo0 fvid">
-				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
+	<section id="fenetre" class="fenetreImage4 fimg">
+		<img src="img/Inparfait.png" alt="">
+	</section>
+	<section id="fenetre" class="fenetreImage3 fimg">
+		<div class="multiple">
+			<img src="img/StarfoxImg.png" alt="">
+			<img src="img/photo-portugal.jpg" alt="">
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreImage2 fimg">
+		<div class="multiple">
+			<img src="img/IceFull.png" alt="">
+			<img src="img/JoannaDark.jpg" alt="">
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreImage1 fimg">
+		<div class="multiple">
+			<img src="img/PersonnageImage.png" alt="">
+			<img src="img/Croquis.png" alt="">
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreImage0 fimg">
+		<img src="img/PocketRPG3DImage.jpg" alt="">
+	</section>
+	<section id="fenetre" class="fenetreVideo22 fvid longefenetre">
+		<div class="multiple">
+			<h3>
+				Rail-O-Vania
+			</h3>
+			<h2>
+				<lang class="FR">Game Jam fait maison avec mes amis</lang>
+				<lang class="EN">Homemade Game Jam with my friends</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Fait avec Unity en août 2021 en équipe de 3. Réalisé en un total de 24 heures. Mon rôle était chef d'équipe, programmeur, animateur et artiste VFX.
+				</lang>
+				<lang class="EN">
+					Made with Unity in August 2021 in a team of 3. Completed in a total of 24 hours. My role was team leader, programmer, animator and VFX artist.
+				</lang>
+			</p>
+			<img style="width: 50%; display: block; margin-left: auto; margin-right: auto;" src="img/rov3.png" alt="">
+			<h2>
+				<lang class="FR">Railles, tirs, points</lang>
+				<lang class="EN">Rails, Shoot, Points</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Le wagon suit les raille en collisionant avec eux. A chaque colision avec une raille change la direction du wagon vers la prochaine raille.
+					J'ai intégré la possibilité de changer la vitesse du wagon dépendament de quelle raille on touche. Le joueur peut tirer sur des cibles, 
+					des mineraux et des chauves-souris pour avoir des points.
+				</lang>
+				<lang class="EN">
+					The minecart follows the rails by colliding with them. Each collision with a rail changes the direction of the minecart towards the next rail.
+					I integrated the possibility of changing the speed of the minecart depending on which rail you touch. The player can shoot at targets,
+					minerals and bats for points.
+				</lang>
+			</p>
+			<img style="width: 40%; display: block; margin-left: auto; margin-right: auto;" src="img/rov1.gif" alt="">
+			<img src="img/rov4.png" alt="">
+			<h2>
+				<lang class="FR">Animations et pont</lang>
+				<lang class="EN">Animations and Bridge</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Beaucoup d'animations ont un du rebonds pour simuler l’effet cartoon. Pour faire descendre le pont, il faut tirer sur le 
+					levier  sinon le wagon va tomber dans la lave.
+				</lang>
+				<lang class="EN">
+					Many animations have a bit of bounce to simulate the cartoon effect. To lower the bridge, you have to pull the lever otherwise 
+					the minecart will fall into the lava.
+				</lang>
+			</p>
+			<img style="width: 40%; display: block; margin-left: auto; margin-right: auto;" src="img/rov2.gif" alt="">
+			<h2>
+				<lang class="FR">Gameplay</lang>
+				<lang class="EN">Gameplay</lang>
+			</h2>
+			<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<h2>
+				<lang class="FR">Équipe</lang>
+				<lang class="EN">Team</lang>
+			</h2>
+			<p>
+				<lang class="FR">David Dias - Programmeur, artiste VFX et SFX</lang>
+				<lang class="EN">David Dias - Programmer, SFX and VFX artist</lang>
+			</p>
+			<p>
+				<lang class="FR">Adib Benchekroun - Modelage 3D et design de niveau</lang>
+				<lang class="EN">Adib Benchekroun - 3D Modeling and level designer</lang>
+			</p>
+			<p>
+				<lang class="FR">Frederick Poliquin - Musique et sons</lang>
+				<lang class="EN">Frederick Poliquin - Music and SFX</lang>
+			</p>
+			<div style="height: 435px;"></div>
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreVideo21 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo20 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo19 fvid longefenetre">
+		<div class="multiple">
+			<h3>
+				Child's Mind
+			</h3>
+			<h2>
+				<lang class="FR">Cours: Prototypage et expérimentation</lang>
+				<lang class="EN">Class: Prototyping and Experimentation</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Fait avec Unity en automne 2021, à l'UQAT en équipe de 3. Mon rôle était programmeur, artiste VFX et SFX.
+					J'ai fait le rendering, les interfaces, les qte (quick time event), les sons et les animations.
+				</lang>
+				<lang class="EN">
+					Made with Unity in fall 2021 in a team of 3. My role was programmer, SFX and VFX artist.
+					I did the rendering, the interfaces, the qte (quick time event), the sound effects and the animations.
+				</lang>
+			</p>
+			<img src="img/cm2.gif" alt="">
+			<h2>
+				<lang class="FR">VFX, QTE et Jumpscare</lang>
+				<lang class="EN">VFX, QTE and Jumpscare</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Quand le joueur regarde un monstre (un meuble), la saturation, le grain, le fov, l'exposure et le brouillard change.
+					Ensuite, un qte apparait (le qte simule la respiration) et il faut cliquer au bon moment plusieurs fois jusqu'à tant que le personnage se calme.
+					Si le joueur rate, le meuble qui ressemble à un monstre saute vers la caméra.
+				</lang>
+				<lang class="EN">
+					When the player looks at a monster (a furniture), saturation, grain, fov, exposure and the fog changes.
+					Then, a qte appears (the qte simulates breathing) and you have to click at the right time, several times, until the character calms down.
+					If the player misses, the furniture that looks like a monster jumps towards the camera.
+				</lang>
+			</p>
+			<img src="img/cm1.gif" alt="">
+			<h2>
+				<lang class="FR">Déclencheurs d'événements</lang>
+				<lang class="EN">Event Triggers</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					J'ai programmé un déclencheur d'événement qui était principalement utilisé pour les déclencher des sons,
+					mais il fonctionne aussi pour  toutes les actions que le joueur peut faire dans l'environnement comme
+					prendre une clé, ouvrir une porte, quitter le tutoriel, etc.
+					Il y a des paramètres pour quand le déclencheur peut être réutilisé, des fonctions ajustables et la
+					possibilité de glisser la quantité de sons voulus: les sons sont aléatoires s'il y en a plus qu'un dans un déclencheur.
+				</lang>
+				<lang class="EN">
+					I programmed an event trigger which was mainly used to trigger sound effects, but it also works for all the actions
+					the player can do in the environment like taking a key, opening a door, exiting the tutorial, etc.
+					There are settings for when the trigger can be reused, adjustable functions and the possibility of dragging the quantity
+					of desired sounds: the sounds are random if there is more than one in a trigger.
+				</lang>
+			</p>
+			<img src="img/cm3.png" alt="">
+			<h2>
+				<lang class="FR">Gameplay</lang>
+				<lang class="EN">Gameplay</lang>
+			</h2>
+			<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<h2>
+				<lang class="FR">Équipe</lang>
+				<lang class="EN">Team</lang>
+			</h2>
+			<p>
+				<lang class="FR">David Dias - Programmeur, artiste VFX et SFX</lang>
+				<lang class="EN">David Dias - Programmer, SFX and VFX artist</lang>
+			</p>
+			<p>
+				<lang class="FR">Jean-Philippe Filiatrault - Programmeur</lang>
+				<lang class="EN">Jean-Philippe Filiatrault - Programmer</lang>
+			</p>
+			<p>
+				<lang class="FR">Sodana Yen - Directeur artistique, Modelage 3D</lang>
+				<lang class="EN">Sodana Yen - Art Director, 3D Modeling</lang>
+			</p>
+			<div style="height: 435px;"></div>
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreVideo18 fvid longefenetre">
+		<div class="multiple">
+			<h3>
+				Warriors' Arena
+			</h3>
+			<h2>
+				<lang class="FR">Cours: Spécialisation: recherche dirigée</lang>
+				<lang class="EN">Class: Specialization: directed research</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Fait avec Unity et Photon PUN en automne 2021, à l'UQAT en équipe de 4. Un Game Jam où le jeu a été réalisé en 4 jours. Mon rôle était chef d'équipe, programmeur multijoueur et designer audio.
+					L'objectif était de faire un jeu avec une équipe limitée par nos spécialisations.
+				</lang>
+				<lang class="EN">
+					Made with Unity and Photon PUN in fall 2021 in a team of 4. A Game Jam where the game was made in 4 days. My role was team leader and multiplayer programmer and sound designer.
+					The goal was to make a game with a team limited by our specializations.
+				</lang>
+			</p>
+			<img src="img/wa1.gif" alt="">
+			<p>
+				<lang class="FR">
+					J'ai tout converti le code du programmeur gameplay pour fonctionner en multijoueur. J'ai aussi programmé le hook, l'effet de stun, l'invisibilité et les effets de potions aléatoires.
+				</lang>
+				<lang class="EN">
+					I converted all the gameplay programmer's code to work in multiplayer. I also programmed the hook, the stun effect, the invisibility and the random potion effects.
+				</lang>
+			</p>
+			<img src="img/wa2.gif" alt="">
+			<h2>
+				<lang class="FR">Gameplay</lang>
+				<lang class="EN">Gameplay</lang>
+			</h2>
+			<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<h2>
+				<lang class="FR">Équipe</lang>
+				<lang class="EN">Team</lang>
+			</h2>
+			<p>
+				<lang class="FR">David Dias - Chef d'équipe, Programmeur multijoueur et gameplay, designer audio</lang>
+				<lang class="EN">David Dias - Team leader, network and gameplay programmer, audio designer</lang>
+			</p>
+			<p>
+				<lang class="FR">Adib Benchekroun - Directeur artistique, Artiste personnage/environnement</lang>
+				<lang class="EN">Adib Benchekroun - Art Director, Character/Environment Artist</lang>
+			</p>
+			<p>
+				<lang class="FR">Alain Pham - Designer UX/UI</lang>
+				<lang class="EN">Alain Pham - UI/UX Designer</lang>
+			</p>
+			<p>
+				<lang class="FR">Antoine Turgeon - Programmeur gameplay, Équilibrage du jeux</lang>
+				<lang class="EN">Antoine Turgeon - Gameplay Programmer, Game Balancing</lang>
+			</p>
+			<div style="height: 435px;"></div>
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreVideo17 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo16 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo15 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo14 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo13 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo12 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo11 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo10 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo9 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo8 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo7 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo6 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo5 fvid longefenetre">
+		<div class="multiple">
+			<h3>
+				JETPACK PISTOLATOR
+			</h3>
+			<h2>
+				<lang class="FR">Game Jam fait maison avec mes amis</lang>
+				<lang class="EN">Homemade Game Jam with my friends</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Fait avec Unity et Photon PUN en janvier 2021 en équipe de 2. Réalisé en un total de 24 heures. Mon rôle était programmeur.
+					L'objectif était de faire un jeu dans les airs.
+				</lang>
+				<lang class="EN">
+					Made with Unity and Photon PUN in January 2021 in a team of 2. Completed in a total of 24 hours. My role was programmer.
+					The goal was to make a game in the air.
+				</lang>
+			</p>
+			<h2>
+				<lang class="FR">Menu</lang>
+				<lang class="EN">Menu</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Il y a 10 personnages jouables, chacun ayant des donnés différentes qui seront synchronisés en multijoueur quand le joueur entrera dans un salon.
+					Pour entrer dans un salon, simplement entrer le nom du salon. Si le salon n'existe pas, il sera créé.
+				</lang>
+				<lang class="EN">
+					There are 10 playable characters, each with different stats which will sync in multiplayer when the player enters a room.
+					To enter a room, simply enter the name of the room. If the room does not exist, it will be created.
+				</lang>
+			</p>
+			<img src="img/jp1.gif" alt="">
+			<h2>
+				<lang class="FR">Jetpack et balles</lang>
+				<lang class="EN">Jetpack and bullets</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Étant le seul programmeur dans l'équipe, le gameplay devait être très simple à coder, car j'ai aussi la tâche de rendre tout le code fonctionnel en multijoueur.
+					La direction et la vélocité des tirs, les animations (marche et feu du jetpack), la position du joueur et son état (points de vie/mort ou vivant/spectateur ou pas,etc.) ont été  
+					synchronisés de façon à favoriser un gameplay rapide et réactif.
+				</lang>
+				<lang class="EN">
+					Being the only programmer in the team, the gameplay had to be very simple to code, as I also have the task of making all the code work in multiplayer.
+					The direction and the velocity of the shots, the animations (walking and the fire of the jetpack), the position of the player and his state (hit points/dead or alive/spectator or not, etc.) have been
+					synchronized to promote fast and responsive gameplay.
+				</lang>
+			</p>
+			<img src="img/jp2.gif" alt="">
+			<h2>
+				<lang class="FR">Gameplay</lang>
+				<lang class="EN">Gameplay</lang>
+			</h2>
+			<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<h2>
+				<lang class="FR">Équipe</lang>
+				<lang class="EN">Team</lang>
+			</h2>
+			<p>
+				<lang class="FR">David Dias - Programmeur</lang>
+				<lang class="EN">David Dias - Programmer</lang>
+			</p>
+			<p>
+				<lang class="FR">Frederick Poliquin - Musique, sons et images</lang>
+				<lang class="EN">Frederick Poliquin - Music, SFX and sprites</lang>
+			</p>
+			<div style="height: 435px;"></div>
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreVideo4 fvid longefenetre">
+		<div class="multiple">
+			<h3>
+				SmolRPG
+			</h3>
+			<h2>
+				<lang class="FR">Cours: Projet de fin d'études</lang>
+				<lang class="EN">Class: Graduation Project</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Fait avec Unity en hivers 2020, au Collège de Maisonneuve. L'objectif était d'apprendre quelque chose de nouveau.
+					J'ai choisi de faire un jeu mobile pour Android. (Apprendre à mettre des publicités et compter le temps hors jeux).
+					Tout est fait par moi, sauf pour la musique.
+				</lang>
+				<lang class="EN">
+					Made with Unity in winter 2020, at Collège de Maisonneuve. The goal was to learn something new. I chose to make a mobile game for Android.
+					(Learning how to put advertisements and count the time when the game is closed).
+					Everything is done by me, except for the music.
+				</lang>
+			</p>
+			<img src="img/PocketRPG3DImage.jpg" alt="">
+			<h2>
+				<lang class="FR">Mobile</lang>
+				<lang class="EN">Mobile</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Les ennemis réapparaissent à chaque heure. L'heure est calculée en sauvegardant la date/heure/minutes/secondes de la dernière sauvegarde du joueur 
+					(il y a des sauvegardes automatiques) et sera ensuite comparée avec la date présente pour savoir si les ennemis peuvent réapparaitre ou combien de 
+					temps il reste avant que les ennemis puissent réapparaitre. Aussi, si le joueur veut se guérir sans acheter de la nourriture, il peut regarder une 
+					publicité en cliquant sur le  bouton + ou simplement attendre, car le joueur récupère un point de vie à chaque 10 minutes, même quand le jeu est fermé.
+				</lang>
+				<lang class="EN">
+					Enemies respawn every hour. The time is calculated by saving the date/hour/minutes/seconds of the player's last save
+					(there are automatic saves) and will then be compared with the current date to know if enemies can respawn or how many
+					time is left before enemies can respawn. Also, if the player wants to heal himself without buying food, he can watch an
+					ad by clicking on the + button or by simply waiting, because the player recovers 1 hp every 10 minutes, even when the game is closed.
+				</lang>
+			</p>
+			<img style="width: 40%; display: block; margin-left: auto; margin-right: auto;" src="img/srpg3.png" alt="">
+			<h2>
+				<lang class="FR">Combat</lang>
+				<lang class="EN">Combat</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Le combat est très simple, il suffit de cliquer sur un ennemi et le personnage va pointer son épée vers l'ennemi.
+					Si le joueur ne bouge pas, il aura son bouclier devant lui. Bloquer des coups réduit les dégâts reçus. Le but est d'attaquer sans trop s'approcher de l'ennemi.
+				</lang>
+				<lang class="EN">
+					The combat is very simple, just click on an enemy and the character will point his sword towards the enemy.
+					If the player does not move, he will have his shield in front of him. Blocking hits reduces incoming damage. The goal is to attack without getting too close to the enemy.
+				</lang>
+			</p>
+			<img style="width: 50%; display: block; margin-left: auto; margin-right: auto;" src="img/srpg2.gif" alt="">
+			<h2>
+				<lang class="FR">Magasins et inventaire</lang>
+				<lang class="EN">Shops and inventory</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Le joueur peut acheter de la nourriture et l'utiliser pour se guérir. Il peut aussi acheter et équiper des armures, des boucliers et des épées.
+					L'inventaire fonctionne avec des collisions en 2D pour détecter l'emplacement que l'objet sélectionné aura.
+					Le joueur peut glisser un objet à l'extérieur de l'inventaire s'il ne le veut plus. L'objet va flotter comme dans Minecraft et peut être récupéré en s'y saprochant.
+				</lang>
+				<lang class="EN">
+					The player can buy food and use it to heal. He can also buy and equip armor, shields and swords.
+					The inventory works with 2D collisions to detect the location that the selected object will have.
+					The player can drag an item out of the inventory if they no longer want it. The object will float like in Minecraft and can be picked up by approaching it.
+				</lang>
+			</p>
+			<img style="width: 30%; display: block; margin-left: auto; margin-right: auto;" src="img/srpg1.gif" alt="">
+			<h2>
+				<lang class="FR">Gameplay</lang>
+				<lang class="EN">Gameplay</lang>
+			</h2>
+			<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<div style="height: 450px;"></div>
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreVideo3 fvid longefenetre">
+		<div class="multiple">
+			<h3>
+				Elementaris
+			</h3>
+			<h2>
+				<lang class="FR">Cours: Programmation d'animation III (Unity)</lang>
+				<lang class="EN">Class: Animation programming III (Unity)</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Fait avec Unity en automne 2019, au Collège de Maisonneuve en équipe de 5. Mon rôle était chef d'équipe, programmeur et compositeur.
+					Je devais programmer les contrôles en première personne des quatre tourelles, modeler et animer les deux monstres de feu et les deux
+					monstres de vent, programmer la caméra du terrain et créer les vagues d'ennemis. J'ai aussi fait beaucoup de tâches hors de mon rôle en extra  (réparer plein de
+					bugs et programmer la tourelle de pierre).
+				</lang>
+				<lang class="EN">
+					Made with Unity in fall 2019, at Collège de Maisonneuve in a team of 5. My role was team leader, programmer and composer.
+					I had to program the first person controls of the four turrets, model and animate the two fire monsters and the two
+					wind monsters, program the terrain camera and create the waves of enemies. I also did a lot of extra work outside of my role (fixing lots of
+					bugs and programming the stone turret).
+				</lang>
+			</p>
+			<img style="width: 50%; display: block; margin-left: auto; margin-right: auto;" src="img/e5.png" alt="">
+			<h2>
+				<lang class="FR">La tour de vent</lang>
+				<lang class="EN">Wind tower</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Quand le joueur prend contrôle de la tour de vent, il attaque plus vite. Il peut aussi se déplacer à l'intérieur pour avoir de meilleurs angles.
+					Il peut aussi attaquer à une distance infinie. Il faut bien donner des raisons pour perdre la vue de haut et contrôler une tour qui faisait déjà sa job.
+				</lang>
+				<lang class="EN">
+					There has to be a reasons for the player to lose his top view and control a tower that was already doing its job so when the player takes control of the 
+					wind tower, he attacks faster. He can move inside to get better angles and can also attack to an infinite distance.
+				</lang>
+			</p>
+			<img src="img/e1.gif" alt="">
+			<h2>
+				<lang class="FR">La tour de pierre</lang>
+				<lang class="EN">Stone tower</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Quand le joueur prend contrôle de la tour de pierre, il attaque plus vite et plus fort. Malheureusement, il n'y a pas la possibilité de contrôler
+					la caméra ou où il peut tirer. Le but de cette tour c'est qu'elle ne puisse attaquer que devant elle.
+				</lang>
+				<lang class="EN">
+					When the player takes control of the stone tower, he attacks faster and stronger. Unfortunately, there is no possibility to control
+					the camera or where he can shoot. The purpose of this tower is that it can only attack in front of it.
+				</lang>
+			</p>
+			<img src="img/e2.gif" alt="">
+			<h2>
+				<lang class="FR">La tour de feu</lang>
+				<lang class="EN">Fire tower</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Quand le joueur prend contrôle de la tour de feu, il attaque plus vite et plus fort. La caméra peut tourner dans tous les directions et le canon suivra
+					cette direction. Il peut aussi attaquer à une distance infinie, mais le projectile lourd est affecté par la gravité.
+				</lang>
+				<lang class="EN">
+					When the player takes control of the fire tower, he attacks faster and stronger. The camera can rotate in any direction and the cannon will follow
+					that direction. It can also attack to an infinite distance, but the heavy projectile is affected by gravity.
+				</lang>
+			</p>
+			<img src="img/e3.gif" alt="">
+			<h2>
+				<lang class="FR">La tour d'eau</lang>
+				<lang class="EN">Water tower</lang>
+			</h2>
+			<p>
+				<lang class="FR">
+					Quand le joueur prend contrôle de la tour d'eau, il attaque plus vite, plus fort et ralentit encore plus les ennemis. La caméra peut tourner dans tous
+					les directions, mais la tour ne suivra la caméra qu'en rotation horizontale. Là où le joueur clique, est là ou le ballon d'eau va tomber.
+				</lang>
+				<lang class="EN">
+					When the player takes control of the water tower, he attacks faster, stronger and slows down enemies even more. The camera can rotate in any
+					directions, but the tower will only follow the camera in an horizontal rotation. Where the player clicks is where the water balloon will fall.
+				</lang>
+			</p>
+			<img src="img/e4.gif" alt="">
+			<h2>
+				<lang class="FR">Gameplay</lang>
+				<lang class="EN">Gameplay</lang>
+			</h2>
+			<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<h2>
+				<lang class="FR">Équipe</lang>
+				<lang class="EN">Team</lang>
+			</h2>
+			<p>
+				<lang class="FR">David Dias - Chef d'équipe, programmeur, directeur sonore, compositeur</lang>
+				<lang class="EN">David Dias - Team leader, programmer, sound director, composer</lang>
+			</p>
+			<p>
+				<lang class="FR">Djawad Taleb - Designer UX/UI</lang>
+				<lang class="EN">Djawad Taleb - UI/UX designer</lang>
+			</p>
+			<p>
+				<lang class="FR">Julien Savoie - Directeur artistique, Modelage 3D</lang>
+				<lang class="EN">Julien Savoie - Art Director, 3D Modeling</lang>
+			</p>
+			<p>
+				<lang class="FR">Thiago Ferreira - Représentant de l'équipe, Developpeur Web</lang>
+				<lang class="EN">Thiago Ferreira - Team representative, Developpeur Web</lang>
+			</p>
+			<p>
+				<lang class="FR">Vincent Majeau - Directeur technique, programmeur</lang>
+				<lang class="EN">Vincent Majeau - Technical director, programmer</lang>
+			</p>
+			<div style="height: 435px;"></div>
+		</div>
+	</section>
+	<section id="fenetre" class="fenetreVideo2">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo1">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
+	<section id="fenetre" class="fenetreVideo0 fvid">
+		<div class="embed-container"><iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</section>
 
-			<footer>
-				<p class="meContacter">Me contacter</p>
-				<form action="https://formspree.io/DavidDiasPortfolio@gmail.com" method="POST">
-					<label>
-						Votre email<input class="email" type="text" name="_replyto">
-					</label>
-					<br>
-					<label>
-						Message<textarea class="message" name="message"></textarea>
-					</label>
-					<br>
-					<button class="envoyer" type="submit">Envoyer</button>
-				</form>
-			</footer>
-			<script src="js/initialise.js"></script>
-		</body>
-	</html>
+	<footer id="About">
+		<h2 class="meContacter"><lang class="FR">À propos</lang><lang class="EN">About</lang></h2>
+		<section class="description">
+			<div>
+				<!--<img style="float: left; width: 25%; max-width:280px;" src="img/moi.jpg">-->
+				<p class="reset-this">
+					<!--style="float: right; width: 74%; padding-left:1%;"-->
+					<lang class="FR">J'adore faire des jeux vidéo et j’aime programmer, créer et assembler dans Unity. Je passe la plupart de mon temps à en apprendre plus sur Unity et le design de jeux video.</lang>
+					<lang class="EN">I love making video games and I like to program, create and assemble in Unity. I spend most of my time learning more about Unity and game design.</lang>
+				</p>
+			</div>
+		</section>
+		<div style="height: 20px;"></div>
+		<section class="description">
+			<script type="text/javascript">
+				// Popup window code
+				function newPopup(url) {
+					popupWindow = window.open(
+						url, 'popUpWindow', ',resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+				}
+			</script>
+			<p><a href="JavaScript:newPopup('CV.pdf');" style="cursor: pointer;" class="reset-this underlineHover"><div><lang class="FR">Cliquez pour voir le CV</lang><lang class="EN">Click to view CV</lang></div></a></p>
+		</section>
+		<h2 class="meContacter"><lang class="FR">Contact</lang><lang class="EN">Contact</lang></h2>
+		<section class="description">
+			<p><a href="mailto:DavidMarquesDias1@gmail.com" style="cursor: pointer;" class="reset-this"><div>DavidMarquesDias1@gmail.com</div></a></p>
+			<p>514-451-3878</p>
+		</section>
+		<div style="height: 50px;"></div>
+	</footer>
+	<script src="js/initialise.js"></script>
+</body>
+</html>
+
+
+<!--<form action="https://formspree.io/DavidDiasPortfolio@gmail.com" method="POST">
+		<label>
+			Votre email<input class="email" type="text" name="_replyto">
+		</label>
+		<br>
+		<label>
+			Message<textarea class="message" name="message"></textarea>
+		</label>
+		<br>
+		<button class="envoyer" type="submit">Envoyer</button>
+	</form>-->

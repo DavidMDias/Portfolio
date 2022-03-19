@@ -11,6 +11,7 @@
 	btnsVideo();
 	btnsAfficher();
 	fondu();
+	changerLangue();
  return true;
 }) ();
 
