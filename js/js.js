@@ -58,13 +58,13 @@ function btnsAfficher()
 			AutresProjets = true;
 			document.querySelector(".AutresProjets").style.display = "none";
 			document.querySelector(".hrefAutresProjetsFR").textContent = "Afficher";
-			document.querySelector(".hrefAutresProjetsEN").textContent = "Show";
+			document.querySelector(".hrefAutresProjetsEN").textContent = "Expand";
 		}
 		else {
 			AutresProjets = false;
 			document.querySelector(".AutresProjets").style.display = "block";
-			document.querySelector(".hrefAutresProjetsFR").textContent = "Cacher";
-			document.querySelector(".hrefAutresProjetsEN").textContent = "Hide";
+			document.querySelector(".hrefAutresProjetsFR").textContent = "Masquer";
+			document.querySelector(".hrefAutresProjetsEN").textContent = "Collapse";
 		}
 	});
 	document.querySelector(".btnAutresJeux").addEventListener("mousedown", function () {
@@ -72,13 +72,13 @@ function btnsAfficher()
 			AutresJeux = true;
 			document.querySelector(".AutresJeux").style.display = "none";
 			document.querySelector(".hrefAutresJeuxFR").textContent = "Afficher";
-			document.querySelector(".hrefAutresJeuxEN").textContent = "Show";
+			document.querySelector(".hrefAutresJeuxEN").textContent = "Expand";
 		}
 		else {
 			AutresJeux = false;
 			document.querySelector(".AutresJeux").style.display = "flex";
-			document.querySelector(".hrefAutresJeuxFR").textContent = "Cacher";
-			document.querySelector(".hrefAutresJeuxEN").textContent = "Hide";
+			document.querySelector(".hrefAutresJeuxFR").textContent = "Masquer";
+			document.querySelector(".hrefAutresJeuxEN").textContent = "Collapse";
 		}
 	});
 	document.querySelector(".btnProjets3D").addEventListener("mousedown", function () {
@@ -86,13 +86,13 @@ function btnsAfficher()
 			Projets_3D = true;
 			document.querySelector(".Projets_3D").style.display = "none";
 			document.querySelector(".hrefProjets3DFR").textContent = "Afficher";
-			document.querySelector(".hrefProjets3DEN").textContent = "Show";
+			document.querySelector(".hrefProjets3DEN").textContent = "Expand";
 		}
 		else {
 			Projets_3D = false;
 			document.querySelector(".Projets_3D").style.display = "flex";
-			document.querySelector(".hrefProjets3DFR").textContent = "Cacher";
-			document.querySelector(".hrefProjets3DEN").textContent = "Hide";
+			document.querySelector(".hrefProjets3DFR").textContent = "Masquer";
+			document.querySelector(".hrefProjets3DEN").textContent = "Collapse";
         }
 	});
 	document.querySelector(".btnProjetsVideo").addEventListener("mousedown", function () {
@@ -100,13 +100,13 @@ function btnsAfficher()
 			Projets_video = true;
 			document.querySelector(".Projets_video").style.display = "none";
 			document.querySelector(".hrefProjetsVideoFR").textContent = "Afficher";
-			document.querySelector(".hrefProjetsVideoEN").textContent = "Show";
+			document.querySelector(".hrefProjetsVideoEN").textContent = "Expand";
 		}
 		else {
 			Projets_video = false;
 			document.querySelector(".Projets_video").style.display = "flex";
-			document.querySelector(".hrefProjetsVideoFR").textContent = "Cacher";
-			document.querySelector(".hrefProjetsVideoEN").textContent = "Hide";
+			document.querySelector(".hrefProjetsVideoFR").textContent = "Masquer";
+			document.querySelector(".hrefProjetsVideoEN").textContent = "Collapse";
 		}
 	});
 	document.querySelector(".btnProjetsGraphiques").addEventListener("mousedown", function () {
@@ -114,13 +114,13 @@ function btnsAfficher()
 			Projets_graphiques = true;
 			document.querySelector(".Projets_graphiques").style.display = "none";
 			document.querySelector(".hrefProjetsGraphiquesFR").textContent = "Afficher";
-			document.querySelector(".hrefProjetsGraphiquesEN").textContent = "Show";
+			document.querySelector(".hrefProjetsGraphiquesEN").textContent = "Expand";
 		}
 		else {
 			Projets_graphiques = false;
 			document.querySelector(".Projets_graphiques").style.display = "flex";
-			document.querySelector(".hrefProjetsGraphiquesFR").textContent = "Cacher";
-			document.querySelector(".hrefProjetsGraphiquesEN").textContent = "Hide";
+			document.querySelector(".hrefProjetsGraphiquesFR").textContent = "Masquer";
+			document.querySelector(".hrefProjetsGraphiquesEN").textContent = "Collapse";
 		}
 	});
 	document.querySelector(".btnMusiques").addEventListener("mousedown", function () {
@@ -128,13 +128,13 @@ function btnsAfficher()
 			Musiques = true;
 			document.querySelector(".Musiques").style.display = "none";
 			document.querySelector(".hrefMusiquesFR").textContent = "Afficher";
-			document.querySelector(".hrefMusiquesEN").textContent = "Show";
+			document.querySelector(".hrefMusiquesEN").textContent = "Expand";
 		}
 		else {
 			Musiques = false;
 			document.querySelector(".Musiques").style.display = "flex";
-			document.querySelector(".hrefMusiquesFR").textContent = "Cacher";
-			document.querySelector(".hrefMusiquesEN").textContent = "Hide";
+			document.querySelector(".hrefMusiquesFR").textContent = "Masquer";
+			document.querySelector(".hrefMusiquesEN").textContent = "Collapse";
 		}
 	});
 }
@@ -144,7 +144,9 @@ function btnsImage()
 	document.querySelector(".vide").addEventListener("mousedown", function () {
 		fermerFenetresImages();
 	});
-
+	document.querySelector(".image5").addEventListener("mousedown", function () {
+		afficherImage(5);
+	});
 	document.querySelector(".image3").addEventListener("mousedown", function () {
 		afficherImage(3);
 	});
@@ -169,7 +171,7 @@ function fermerFenetresImages()
 	document.querySelector(".vide").style.display = "none";
 
 	var i;
-	for (i = 0; i <= 4; i++) {
+	for (i = 0; i <= 5; i++) {
 		document.querySelector(".fenetreImage" + i).style.display = "none";
 	}
 }
@@ -178,6 +180,21 @@ function btnsVideo()
 {
 	document.querySelector(".vide").addEventListener("mousedown", function(){
 		fermerFenetresVideos();
+	});
+
+
+	//JE NE PEUX PAS FAIRE UN FOR LOOP POUR DES ADD EVENT LISTENERS (ca met tous les event listeners sur le dernier document du for loop')
+	document.querySelector(".video26").addEventListener("mousedown", function () {
+		afficherVideo(26);
+	});
+	document.querySelector(".video25").addEventListener("mousedown", function () {
+		afficherVideo(25);
+	});
+	document.querySelector(".video24").addEventListener("mousedown", function () {
+		afficherVideo(24);
+	});
+	document.querySelector(".video23").addEventListener("mousedown", function () {
+		afficherVideo(23);
 	});
 	document.querySelector(".video22").addEventListener("mousedown", function () {
 		afficherVideo(22);
@@ -227,9 +244,9 @@ function btnsVideo()
 	document.querySelector(".video7").addEventListener("mousedown", function () {
 		afficherVideo(7);
 	});
-	/*document.querySelector(".video6").addEventListener("mousedown", function () {
+	document.querySelector(".video6").addEventListener("mousedown", function () {
 		afficherVideo(6);
-	});*/
+	});
 	document.querySelector(".video5").addEventListener("mousedown", function () {
 		afficherVideo(5);
 	});
@@ -248,6 +265,7 @@ function btnsVideo()
 	document.querySelector(".video0").addEventListener("mousedown", function () {
 		afficherVideo(0);
 	});
+	//JE NE PEUX PAS FAIRE UN FOR LOOP POUR DES ADD EVENT LISTENERS (ca met tous les event listeners sur le dernier document du for loop')
 }
 
 function afficherVideo(n)
@@ -262,7 +280,8 @@ function fermerFenetresVideos()
 	document.querySelector(".vide").style.display = "none";
 
 	var i;
-	for (i = 0; i <= 22; i++) {
+	for (i = 0; i <= 26; i++) {
+		console.log(i);
 		document.querySelector(".fenetreVideo"+i).style.display = "none";
 		document.querySelector(".fenetreVideo"+i).getElementsByTagName("iframe")[0].src = "";
 	}
@@ -292,7 +311,7 @@ function recevoirUrl(i)
 			url = "https://www.youtube.com/embed/cLTFzABJeVk?rel=0";
 			return url;
 		case 6:
-			url = "";//Tales of War
+			url = "https://www.youtube.com/embed/pLBnwYgyo6w?rel=0";//Tales of War
 			return url;
 		case 7:
 			url = "https://www.youtube.com/embed/_LcAidsrq78?rel=0";
@@ -341,6 +360,18 @@ function recevoirUrl(i)
 			return url;
 		case 22:
 			url = "https://www.youtube.com/embed/8EmOgfH3Kls?rel=0";
+			return url;
+		case 23:
+			url = "https://www.youtube.com/embed/9FjrmPBFO3k?rel=0";//BackStealthVR
+			return url;
+		case 24:
+			url = "https://www.youtube.com/embed/naYD7q_Pnt0?rel=0";//Zolik
+			return url;
+		case 25:
+			url = "";//NovaScience
+			return url;
+		case 26:
+			url = "https://www.youtube.com/embed/CtHx9XGE54k?rel=0";//RubberFriends
 			return url;
 	}
 }
