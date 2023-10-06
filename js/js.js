@@ -311,7 +311,7 @@ function recevoirUrl(i)
 			url = "https://www.youtube.com/embed/cLTFzABJeVk?rel=0";
 			return url;
 		case 6:
-			url = "https://www.youtube.com/embed/pLBnwYgyo6w?rel=0";//Tales of War
+			url = "https://www.youtube.com/embed/TLwtMEkVxVs?rel=0";//Tales of War
 			return url;
 		case 7:
 			url = "https://www.youtube.com/embed/_LcAidsrq78?rel=0";
