@@ -184,6 +184,9 @@ function btnsVideo()
 
 
 	//JE NE PEUX PAS FAIRE UN FOR LOOP POUR DES ADD EVENT LISTENERS (ca met tous les event listeners sur le dernier document du for loop')
+	document.querySelector(".video27").addEventListener("mousedown", function () {
+		afficherVideo(27);
+	});
 	document.querySelector(".video26").addEventListener("mousedown", function () {
 		afficherVideo(26);
 	});
@@ -279,12 +282,17 @@ function fermerFenetresVideos()
 {
 	document.querySelector(".vide").style.display = "none";
 
-	var i;
-	for (i = 0; i <= 26; i++) {
-		console.log(i);
-		document.querySelector(".fenetreVideo"+i).style.display = "none";
-		document.querySelector(".fenetreVideo"+i).getElementsByTagName("iframe")[0].src = "";
+	for (i = 0; i <= 27; i++) {
+		const videoElement = document.querySelector(".fenetreVideo" + i);
+		if (videoElement) {
+			videoElement.style.display = "none";
+			const iframe = videoElement.getElementsByTagName("iframe")[0];
+			if (iframe) {
+				iframe.src = "";
+			}
+		}
 	}
+	
 }
 
 function recevoirUrl(i)
@@ -372,6 +380,9 @@ function recevoirUrl(i)
 			return url;
 		case 26:
 			url = "https://www.youtube.com/embed/CtHx9XGE54k?rel=0";//RubberFriends
+			return url;
+		case 27:
+			url = "https://www.youtube.com/embed/rzA3Zl2FLLw?rel=0";//The Obscura Experiment
 			return url;
 	}
 }
